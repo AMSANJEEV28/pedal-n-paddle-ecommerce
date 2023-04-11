@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
 
 html {
   background-color: #181f33;
@@ -16,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 35px;
   height: 35px;
   display: flex;
   justify-content: flex-start;
@@ -60,7 +59,7 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
   font-family: 'Righteous', cursive;
 }
@@ -101,11 +100,11 @@ nav a:hover {
 }
 
 .main p {
-  font-family: 'Inspiration', cursive;
-  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
   text-align: center;
   color: #f8e089;
-  margin: -40px 0 0 15%;
+  margin: -45px 0 0 10%;
   z-index: 1;
 }
 
@@ -189,19 +188,21 @@ form input[type="text"]::placeholder {
   margin: 0;
   font-size: 14px;
   font-weight: bold;
+  color: #fff;
 }
 
 .popup .message .code {
-  color: #fff;
+  color: #181f33;
 }
 
 .popup .details {
   padding: 6px;
   background-color: #fff;
   color: #FF6A3D;
-  border-radius:5px;
+  border-radius: 5px;
   margin: 2px 0;
-text-align: center;}
+  text-align: center;
+}
 
 .popup .details a {
   color: #FF6A3D;
