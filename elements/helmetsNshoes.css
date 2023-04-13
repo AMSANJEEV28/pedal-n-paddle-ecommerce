@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
 
 html {
-    background-color: #181f33;
+    background-color: #181e32;
     /* background-color: #9DAAF2   */
     color: #f8e089;
 }
@@ -92,4 +92,48 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #f8e089;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .logo-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-container img {
+        width: 35px;
+        height: auto;
+        margin-left: -5px;
+    }
+
+    nav {
+        height: 35px;
+    }
+
+    nav ul {
+        margin-left: 15px;
+    }
+
+    nav li {
+        margin: 4px;
+    }
+
+    nav a {
+        font-size: 8.5px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+
+    footer a {
+        font-size: 9px;
+    }
+
 }

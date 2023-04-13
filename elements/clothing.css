@@ -1,95 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
 
 html {
-  background-color: #181f33;
-  /* background-color: #9DAAF2   */
-  color: #f8e089;
+    background-color: #181e32;
+    /* background-color: #9DAAF2   */
+    color: #f8e089;
 }
 
 body {
-  overflow-y: hidden;
-  overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .logo-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-  z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
 }
 
 .logo-container img {
-  height: 60px;
-  margin-right: 10px;
+    height: 60px;
+    margin-right: 10px;
 }
 
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 900;
-  background-color: #FF6A3D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 900;
+    background-color: #FF6A3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 nav li {
-  margin: 10px 62px;
+    margin: 10px 62px;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-family: 'Righteous', cursive;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #fff;
-  font-size: 10px;
-  padding: 10px;
-  text-align: center;
-  z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: -1;
 }
 
 footer p {
-  margin: 0;
+    margin: 0;
 }
 
 footer a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
-  color: #f8e089;
+    text-decoration: underline;
+    color: #f8e089;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .logo-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-container img {
+        width: 35px;
+        height: auto;
+        margin-left: -5px;
+    }
+
+    nav {
+        height: 35px;
+    }
+
+    nav ul {
+        margin-left: 15px;
+    }
+
+    nav li {
+        margin: 4px;
+    }
+
+    nav a {
+        font-size: 8.5px;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+
+    footer a {
+        font-size: 9px;
+    }
+
 }

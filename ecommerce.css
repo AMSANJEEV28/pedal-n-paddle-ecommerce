@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  background-color: #181f33;
+  top: 0px;
+  margin: 0px;
+  height: 100%;
+  background-color: #181e32;
   /* background-color: #9DAAF2   */
   color: #f8e089;
 }
 
 body {
-  overflow-y: hidden;
+  margin: 0px;
   overflow-x: hidden;
+  overflow-y: hidden;
+
 }
 
 .logo-container {
@@ -27,8 +38,8 @@ body {
 .logo-container img {
   height: 60px;
   margin-right: 10px;
+  margin-top: 20px;
 }
-
 
 nav {
   position: fixed;
@@ -41,6 +52,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  overflow: hidden;
 }
 
 nav ul {
@@ -68,9 +80,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+video {
+  margin-top: 8%;
+}
 
 .bg {
-  width: 45%;
+  width: 12%;
   height: auto;
   z-index: -1;
   position: relative;
@@ -97,6 +112,7 @@ nav a:hover {
   text-align: center;
   color: #f8e089;
   z-index: 1;
+  margin-top: 16px;
 }
 
 .main p {
@@ -104,7 +120,7 @@ nav a:hover {
   font-size: 18px;
   text-align: center;
   color: #f8e089;
-  margin: -45px 0 0 10%;
+  margin: 2px 0 0 10%;
   z-index: 1;
 }
 
@@ -120,7 +136,7 @@ input[type="text"] {
   border: none;
   border-radius: 10px 0 0 10px;
   font-size: 16px;
-  width: 200px;
+  width: 250px;
 }
 
 button[type="submit"] {
@@ -161,8 +177,8 @@ form input[type="text"]::placeholder {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 120px;
-  height: 80px;
+  width: auto;
+  height: max-content;
   background-color: #FF6A3D;
   border-radius: 20px;
   padding: 15px;
@@ -185,7 +201,7 @@ form input[type="text"]::placeholder {
 }
 
 .popup .message p {
-  margin: 0;
+  margin: 4px;
   font-size: 14px;
   font-weight: bold;
   color: #fff;
@@ -193,6 +209,7 @@ form input[type="text"]::placeholder {
 
 .popup .message .code {
   color: #181f33;
+  margin: 4px;
 }
 
 .popup .details {
@@ -200,7 +217,7 @@ form input[type="text"]::placeholder {
   background-color: #fff;
   color: #FF6A3D;
   border-radius: 5px;
-  margin: 2px 0;
+  margin: 4px;
   text-align: center;
 }
 
@@ -208,6 +225,7 @@ form input[type="text"]::placeholder {
   color: #FF6A3D;
   text-decoration: none;
   font-weight: bold;
+  margin: 4px;
 }
 
 /* Footer */
@@ -234,4 +252,138 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: #f8e089;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    height: 80vh;
+    overflow: hidden;
+  }
+
+  .logo-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-container img {
+    width: 35px;
+    height: auto;
+    margin-left: -5px;
+    margin-top: 12px;
+  }
+
+  nav {
+    height: 50px;
+  }
+
+  nav ul {
+    margin-left: 25px;
+  }
+
+  nav li {
+    margin: 4px;
+  }
+
+  nav a {
+    font-size: 8px;
+  }
+
+  .blog {
+    display: none;
+  }
+
+  video {
+    margin-top: 100px;
+  }
+
+  .bg {
+    width: 30%;
+  }
+
+  @keyframes move {
+    0% {
+      left: -40%;
+    }
+  
+    100% {
+      left: calc(100vw - 115px);
+    }
+  }
+
+  .main h1 {
+    font-size: 35px;
+    margin-top: 60px;
+  }
+
+  .main p {
+    font-size: 15px;
+    margin: 0 0 0 15%;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+
+  input[type="text"] {
+    padding: 15px;
+    font-size: 9px;
+    width: 100px;
+  }
+
+  button[type="submit"] {
+    padding: 13px 20px;
+    font-size: 12px;
+  }
+
+  form input[type="text"]::placeholder {
+    color: #FF6A3D;
+  }
+
+  .help-button {
+    bottom: 10%;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .help-button a {
+    font-size: 12px;
+  }
+
+  .popup {
+    bottom: 10%;
+    right: 10px;
+    width: 100px;
+    height: max-content;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .popup .message p {
+    font-size: 10px;
+  }
+
+  .popup .message .code {
+    font-size: 12px;
+  }
+
+  .popup .details {
+    padding: 3px;
+    margin: 1px 0;
+    border-radius: 2px;
+  }
+
+  .popup .details a {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: 9px;
+  }
+
+  footer a {
+    font-size: 9px;
+  }
+
 }
