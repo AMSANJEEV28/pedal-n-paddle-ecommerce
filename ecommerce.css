@@ -307,7 +307,7 @@ footer a:hover {
     }
   
     100% {
-      left: calc(100vw - 115px);
+      left: calc(100vw - 120px);
     }
   }
 
@@ -379,11 +379,11 @@ footer a:hover {
   }
 
   footer {
-    font-size: 9px;
+    font-size: 8px;
   }
 
   footer a {
-    font-size: 9px;
+    font-size: 8px;
   }
 
 }
