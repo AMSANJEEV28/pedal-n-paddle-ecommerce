@@ -64,6 +64,11 @@ main {
   font-weight: normal;
 }
 
+.social a:hover {
+  background:none;
+  color: #fff;
+}
+
 /*--------------------  SOCIAL ENDS ----------------------------------------*/
 /*--------------------  NAV STARTS ----------------------------------------*/
 
@@ -99,6 +104,7 @@ nav {
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  z-index: 9999;
 }
 
 nav ul {
@@ -124,6 +130,8 @@ nav ul li a {
 
 nav a:hover {
   text-decoration: underline;
+  background:none;
+  color: #fff;
 }
 
 .profile {
@@ -141,6 +149,10 @@ nav a:hover {
 
 .profile li {
   margin: 0 10px;
+}
+.profile a:hover{
+  background:none;
+  color: #fff;
 }
 
 /*--------------------  NAV ENDS ----------------------------------------*/
