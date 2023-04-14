@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF6A3D">
+    <meta name="theme-color" content="#FF6A3D" />
     <title>PEDAL AND PADDLE</title>
     <link href="ecommerce.css" rel="stylesheet" type="text/css" />
     <link
@@ -12,54 +12,920 @@
     />
   </head>
   <body>
-    <div class="logo-container">
-      <img src="assets/logo.png" alt="Logo" />
-    </div>
-    <nav>
-      <ul>
-        <li><a href="elements/bikesNframes.html">Bikes & Frames</a></li>
-        <li><a href="elements/clothing.html">Clothing</a></li>
-        <li><a href="elements/helmetsNshoes.html">Helmets & Shoes</a></li>
-        <li><a href="elements/accessories.html">Accessories</a></li>
-        <li class="blog"><a href="elements/blog.html">Blog</a></li>
-        <li><a href="elements/sale.html">Sale</a></li>
-        <li><a href="elements/login.html">Login</a></li>
-      </ul>
-    </nav>
-
-    <video class="bg" autoplay loop muted preload="true">
-      <source src="assets/bg.mp4" type="video/mp4" />
-    </video>
-    <section class="main">
-      <h1>PEDAL and PADDLE</h1>
-      <p>Join the ride, make a splash at Pedal & Paddle!</p>
-
-      <form>
-        <input type="text" placeholder="Search bikes and more..." />
-        <button type="submit">Search</button>
-      </form>
-    </section>
-    <section class="bottom">
-      <div class="help-button">
-        <a href="#">Help</a>
-      </div>
-      <div class="popup">
-        <div class="message">
-          <p>72 Hours Only!! 20% off on 1 item</p>
-          <p class="code">Use code: SAVE20</p>
+    <main>
+      <section class="head">
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
         </div>
-        <div class="details">
-          <a href="#">See details</a>
+
+        <nav>
+          <div class="logo-container">
+            <a href="index.html" target="_self"
+              ><img src="assets/logo.png" alt="Logo"
+            /></a>
+          </div>
+
+          <div class="navigations">
+            <ul>
+              <li><a href="elements/bikesNframes.html">Bikes & Frames</a></li>
+              <li><a href="elements/clothing.html">Clothing</a></li>
+              <li><a href="elements/helmetsNshoes.html">Helmets & Shoes</a></li>
+              <li><a href="elements/accessories.html">Accessories</a></li>
+              <li class="blog"><a href="elements/blog.html">Blog</a></li>
+              <li><a href="elements/sale.html">Sale</a></li>
+              <li><a href="elements/login.html">Login</a></li>
+            </ul>
+          </div>
+
+          <div class="profile">
+            <ul>
+              <li>
+                <a href="elements/profile.html"><i class="fas fa-user"></i></a>
+              </li>
+              <li>
+                <a href="elements/cart.html"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li>
+                <a href="elements/search.html"><i class="fas fa-search"></i></a>
+              </li>
+              <li>
+                <a href="elements/heart.html"><i class="fas fa-heart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="discount">
+          <p>
+            Interest free EMI available. 72 Hours left!! 20% off on 1 item. Use
+            code: SAVE20
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <video class="bg" autoplay loop muted preload="true">
+        <source src="assets/bg.mp4" type="video/mp4" />
+      </video>
+
+      <section class="main">
+        <h1>PEDAL and PADDLE</h1>
+        <p>Join the ride, make a splash at Pedal & Paddle!</p>
+
+        <form>
+          <input type="text" placeholder="Search bikes and more..." />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="help">
+        <div class="help-button">
+          <a href="#">Help</a>
+        </div>
+      </section>
+
+      <section class="items">
+        <div class="cycle-tools">
+          <h2 class="items-heading tools-heading">TOOLS</h2>
+          <button class="view-all">
+            <a href="elements/tools.html">View All</a>
+          </button>
+          <div class="tools">
+            <div class="tool-box">
+              <div class="tool-image">
+                <img src="assets/tools/tool1.jpg" alt="Tool 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="tool-details">
+                <h3 class="tool-name">Tool 1</h3>
+                <div class="tool-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="tool-price">$99.99</div>
+              </div>
+            </div>
+            <div class="tool-box">
+              <div class="tool-image">
+                <img src="assets/tools/tool2.jpg" alt="Tool 2" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="tool-details">
+                <h3 class="tool-name">Tool 2</h3>
+                <div class="tool-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="tool-price">$99.99</div>
+              </div>
+            </div>
+            <div class="tool-box">
+              <div class="tool-image">
+                <img src="assets/tools/tool3.jpg" alt="Tool 3" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="tool-details">
+                <h3 class="tool-name">Tool 3</h3>
+                <div class="tool-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="tool-price">$99.99</div>
+              </div>
+            </div>
+            <div class="tool-box">
+              <div class="tool-image">
+                <img src="assets/tools/tool4.jpg" alt="Tool 4" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="tool-details">
+                <h3 class="tool-name">Tool 4</h3>
+                <div class="tool-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="tool-price">$99.99</div>
+              </div>
+            </div>
+            <div class="tool-box">
+              <div class="tool-image">
+                <img src="assets/tools/tool5.jpg" alt="Tool 5" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="tool-details">
+                <h3 class="tool-name">Tool 5</h3>
+                <div class="tool-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="tool-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cycle-helmet">
+          <h2 class="items-heading helmets-heading">HELMETS</h2>
+          <button class="view-all">
+            <a href="elements/helmetsNshoes.html">View All</a>
+          </button>
+          <div class="helmets">
+            <div class="helmet-box">
+              <div class="helmet-image">
+                <img src="assets/helmets/helmet1.jpg" alt="Helmet 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="helmet-details">
+                <h3 class="helmet-name">Helmet 1</h3>
+                <div class="helmet-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="helmet-price">$99.99</div>
+              </div>
+            </div>
+            <div class="helmet-box">
+              <div class="helmet-image">
+                <img src="assets/helmets/helmet2.jpg" alt="Helmet " />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="helmet-details">
+                <h3 class="helmet-name">Helmet 2</h3>
+                <div class="helmet-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="helmet-price">$99.99</div>
+              </div>
+            </div>
+            <div class="helmet-box">
+              <div class="helmet-image">
+                <img src="assets/helmets/helmet3.jpg" alt="Helmet 3" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="helmet-details">
+                <h3 class="helmet-name">Helmet 3</h3>
+                <div class="helmet-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="helmet-price">$99.99</div>
+              </div>
+            </div>
+            <div class="helmet-box">
+              <div class="helmet-image">
+                <img src="assets/helmets/helmet4.jpg" alt="Helmet 4" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="helmet-details">
+                <h3 class="helmet-name">Helmet 4</h3>
+                <div class="helmet-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="helmet-price">$99.99</div>
+              </div>
+            </div>
+            <div class="helmet-box">
+              <div class="helmet-image">
+                <img src="assets/helmets/helmet5.jpg" alt="Helmet 5" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="helmet-details">
+                <h3 class="helmet-name">Helmet 5</h3>
+                <div class="helmet-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="helmet-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cycle-jersey">
+          <h2 class="items-heading jersey-heading">JERSEY</h2>
+          <button class="view-all">
+            <a href="elements/helmetsNshoes.html">View All</a>
+          </button>
+          <div class="jersey">
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey1.jpg" alt="Jersey 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 1</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey2.jpg" alt="Jersey 2" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 2</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey3.jpg" alt="Jersey 3" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 3</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey4.jpg" alt="Jersey 4" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 4</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey5.jpg" alt="Jersey 5" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 5</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="jersey">
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey6.jpg" alt="Jersey 6" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 6</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey7.jpg" alt="Jersey 7" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 7</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey8.jpg" alt="Jersey 8" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 8</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey9.jpg" alt="Jersey 9" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 9</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+            <div class="jersey-box">
+              <div class="jersey-image">
+                <img src="assets/jersey/jersey10.jpg" alt="Jersey 10" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="jersey-details">
+                <h3 class="jersey-name">Jersey 10</h3>
+                <div class="jersey-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="jersey-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages">
+          <h2>THE PEDAL AND PADDLE ADVANTAGE</h2>
+          <img src="assets/advantages.png" />
+        </div>
+
+        <div class="cycle-lights">
+          <h2 class="items-heading lights-heading">RAVEMEN LIGHTS</h2>
+          <button class="view-all">
+            <a href="elements/helmetsNshoes.html">View All</a>
+          </button>
+          <div class="lights">
+            <div class="light-box">
+              <div class="light-image">
+                <img src="assets/lights/rl1.jpg" alt="Light 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="light-details">
+                <h3 class="light-name">Light 1</h3>
+                <div class="light-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="light-price">$99.99</div>
+              </div>
+            </div>
+            <div class="light-box">
+              <div class="light-image">
+                <img src="assets/lights/rl2.jpg" alt="Light 2" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="light-details">
+                <h3 class="light-name">Light 2</h3>
+                <div class="light-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="light-price">$99.99</div>
+              </div>
+            </div>
+            <div class="light-box">
+              <div class="light-image">
+                <img src="assets/lights/rl3.jpg" alt="Light 3" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="light-details">
+                <h3 class="light-name">Light 3</h3>
+                <div class="light-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="light-price">$99.99</div>
+              </div>
+            </div>
+            <div class="light-box">
+              <div class="light-image">
+                <img src="assets/lights/rl4.jpg" alt="Light 4" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="light-details">
+                <h3 class="light-name">Light 4</h3>
+                <div class="light-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="light-price">$99.99</div>
+              </div>
+            </div>
+            <div class="light-box">
+              <div class="light-image">
+                <img src="assets/lights/rl5.jpg" alt="Light 5" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="light-details">
+                <h3 class="light-name">Light 5</h3>
+                <div class="light-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="light-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cycle-apparel">
+          <h2 class="items-heading apparel-heading">PnP CYCLING APPAREL</h2>
+          <button class="view-all">
+            <a href="elements/helmetsNshoes.html">View All</a>
+          </button>
+          <div class="apparel">
+            <div class="apparel-box">
+              <div class="apparel-image">
+                <img src="assets/apparels/apparel1.jpg" alt="Apparel 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="apparel-details">
+                <h3 class="apparel-name">Apparel 1</h3>
+                <div class="apparel-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="apparel-price">$99.99</div>
+              </div>
+            </div>
+            <div class="apparel-box">
+              <div class="apparel-image">
+                <img src="assets/apparels/apparel2.jpg" alt="Apparel 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="apparel-details">
+                <h3 class="apparel-name">Apparel 2</h3>
+                <div class="apparel-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="apparel-price">$99.99</div>
+              </div>
+            </div>
+            <div class="apparel-box">
+              <div class="apparel-image">
+                <img src="assets/apparels/apparel3.jpg" alt="Apparel 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="apparel-details">
+                <h3 class="apparel-name">Apparel 3</h3>
+                <div class="apparel-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="apparel-price">$99.99</div>
+              </div>
+            </div>
+            <div class="apparel-box">
+              <div class="apparel-image">
+                <img src="assets/apparels/apparel4.jpg" alt="Apparel 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="apparel-details">
+                <h3 class="apparel-name">Apparel 4</h3>
+                <div class="apparel-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="apparel-price">$99.99</div>
+              </div>
+            </div>
+            <div class="apparel-box">
+              <div class="apparel-image">
+                <img src="assets/apparels/apparel5.jpg" alt="Apparel 1" />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="apparel-details">
+                <h3 class="apparel-name">Apparel 5</h3>
+                <div class="apparel-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="apparel-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offers">
+          <h2>FEELING LEFT OUT OF THE PEDAL PARTY?</h2>
+          <p>
+            Don't be a wheelie bad rider! Join over 70,000 fellow cyclists in
+            the Cyclop community and stay up-to-date on the latest offers.
+          </p>
+          <form>
+            <input type="email" placeholder="Enter your email address" />
+            <button class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="customer-reviews">
+          <h2>PEDAL-POWERED OPINIONS</h2>
+          <p>
+            <span class="rating"
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i
+            ></span>
+            From 4628 reviews
+          </p>
+          <div class="review-wrapper">
+            <div class="review">
+              <div class="review-header">
+                <span class="rating"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i
+                ></span>
+                <h3 class="review-title">
+                  Great Experience with Amazing Bikes
+                </h3>
+              </div>
+              <p class="review-text">
+                I had a great experience at this cycle store. The staff were
+                friendly and knowledgeable, and helped me find the perfect bike
+                for my needs. I was impressed with their selection of bikes, and
+                the quality of the products. Overall, I am extremely satisfied
+                with my purchase and would highly recommend this store to anyone
+                looking for a new bike.
+              </p>
+              <div class="review-footer">
+                <img
+                  src="assets/helmets/helmet3.jpg"
+                  alt="Product image"
+                  class="review-image"
+                />
+                <div class="review-info">
+                  <span class="reviewer-name">John Doe</span>
+                  <span class="reviewer-item">Giant Trance Mountain Bike</span>
+                  <span class="review-date">April 1st, 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <span class="rating"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </span>
+                <h3 class="review-title">Disappointing Service and Quality</h3>
+              </div>
+              <p class="review-text">
+                I had a disappointing experience at this cycle store. The staff
+                were not helpful, and seemed uninterested in assisting me. The
+                quality of the bikes was also poor, and I ended up having to
+                return the bike due to multiple issues. Overall, I would not
+                recommend this store to others.
+              </p>
+              <div class="review-footer">
+                <img
+                  src="assets/lights/rl4.jpg"
+                  alt="Product image"
+                  class="review-image"
+                />
+                <div class="review-info">
+                  <span class="reviewer-name">Jane Smith</span>
+                  <span class="reviewer-item">Schwinn Hybrid Bike</span>
+                  <span class="review-date">March 28th, 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow-wrapper">
+            <button class="arrow arrow-left">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="arrow arrow-right">
+              <i class="fa fa-angle-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="cycle-new-products">
+          <h2 class="items-heading new-products-heading">NEW PRODUCTS</h2>
+          <button class="view-all">
+            <a href="elements/helmetsNshoes.html">View All</a>
+          </button>
+          <div class="new-products">
+            <div class="new-products-box">
+              <div class="new-products-image">
+                <img
+                  src="assets/new-products/new-products1.jpg"
+                  alt="new-product 1"
+                />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="new-products-details">
+                <h3 class="new-products-name">new-product 1</h3>
+                <div class="new-products-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="new-products-price">$99.99</div>
+              </div>
+            </div>
+            <div class="new-products-box">
+              <div class="new-products-image">
+                <img
+                  src="assets/new-products/new-products2.jpg"
+                  alt="new-product 2"
+                />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="new-products-details">
+                <h3 class="new-products-name">new-product 2</h3>
+                <div class="new-products-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="new-products-price">$99.99</div>
+              </div>
+            </div>
+            <div class="new-products-box">
+              <div class="new-products-image">
+                <img
+                  src="assets/new-products/new-products3.jpg"
+                  alt="new-product 3"
+                />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="new-products-details">
+                <h3 class="new-products-name">new-product 3</h3>
+                <div class="new-products-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="new-products-price">$99.99</div>
+              </div>
+            </div>
+            <div class="new-products-box">
+              <div class="new-products-image">
+                <img
+                  src="assets/new-products/new-products4.jpg"
+                  alt="new-product 4"
+                />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="new-products-details">
+                <h3 class="new-products-name">new-product 4</h3>
+                <div class="new-products-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="new-products-price">$99.99</div>
+              </div>
+            </div>
+            <div class="new-products-box">
+              <div class="new-products-image">
+                <img
+                  src="assets/new-products/new-products5.jpg"
+                  alt="new-product 5"
+                />
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+              <div class="new-products-details">
+                <h3 class="new-products-name">new-product 5</h3>
+                <div class="new-products-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="new-products-price">$99.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <section class="footer">
       <footer>
-        <p>
-          &copy; 2023 Pedal and Paddle. All rights reserved. Designed and
-          developed by
-          <a href="https://github.com/AMSANJEEV28">[A M Sanjeev]</a>.
-        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Customer Service</h4>
+              <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Return & Exchange Policy</a></li>
+                <li><a href="#">Price Match</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Pedal and Paddle Gift Card</a></li>
+                <li><a href="#">EMI Option</a></li>
+                <li><a href="#">Earn By Selling</a></li>
+                <li><a href="#">Returns & Exchange Portal</a></li>
+                <li><a href="#">Chat to Track orders or Report Issues</a></li>
+                <li><a href="#">Support Mail - support@pedalnpaddle.in</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Contact Us</h4>
+              <p>Pedal and Paddle Pvt. ltd.<br />Siwan, Bihar --- 841226</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  &copy; 2023 Pedal and Paddle. All rights reserved. Designed
+                  and developed by
+                  <a href="https://github.com/AMSANJEEV28">[A M Sanjeev]</a>.
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  Pedal and Paddle Support: Returns & Exchange Portal 10AM - 6PM
+                  (Mon-Fri) | Chat to Track orders or Report Issues
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </section>
   </body>
