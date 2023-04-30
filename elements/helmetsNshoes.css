@@ -1,72 +1,194 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
 
-html {
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
     background-color: #181e32;
-    /* background-color: #9DAAF2   */
-    color: #f8e089;
-}
-
-body {
-    overflow-y: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0px;
     overflow-x: hidden;
-}
+    position: relative;
+    min-height: 100%;
+  }
 
-.logo-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+/*--------------------  HEAD STARTS ----------------------------------------*/
+
+.head {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*--------------------  SOCIAL STARTS ----------------------------------------*/
+  
+  .social {
+    width: 100%;
+    height: 35px;
+    background-color: #ff6a3d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #ff9a7b;
+  }
+  
+  .social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .social li {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .social a:hover {
+    background:none;
+    color: #fff;
+  }
+  
+  /*--------------------  SOCIAL ENDS ----------------------------------------*/
+  /*--------------------  NAV STARTS ----------------------------------------*/
+  
+  .logo-container {
+    position: absolute;
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
-    z-index: 999;
-}
-
-.logo-container img {
-    height: 60px;
-    margin-right: 10px;
-}
-
-
-nav {
-    position: fixed;
-    top: 0;
     left: 0;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    margin: 0;
+  }
+  
+  nav {
     width: 100%;
-    z-index: 900;
-    background-color: #FF6A3D;
+    background-color: #ff6a3d;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
-
-nav ul {
+    overflow: hidden;
+  }
+  
+  .navigations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 9999;
+  }
+  
+  nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: nowrap;
-}
-
-nav li {
-    margin: 10px 62px;
-}
-
-nav a {
+  }
+  
+  nav li {
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-weight: normal;
     text-transform: uppercase;
-    font-family: 'Righteous', cursive;
-}
-
-nav a:hover {
+    font-family: "Righteous", cursive;
+  }
+  
+  nav a:hover {
     text-decoration: underline;
-}
+    background:none;
+    color: #fff;
+  }
+  
+  .profile {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .profile li {
+    margin: 0 10px;
+  }
+  .profile a:hover{
+    background:none;
+    color: #fff;
+  }
+  
+  /*--------------------  NAV ENDS ----------------------------------------*/
+  /*--------------------  DISCOUNT STARTS ----------------------------------------*/
+  
+  .discount {
+    width: 100%;
+    height: 35px;
+    background-color: #fdd5b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    color: #ff6a3d;
+    font-weight: bold;
+  }
+  
+  .discount p {
+    animation: float 20s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    50% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /*----- DISCOUNT ENDS -----*/
+  /*--------------------  HEAD ENDS ----------------------------------------*/
+  
 
 /* Footer */
 footer {

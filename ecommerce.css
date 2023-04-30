@@ -276,6 +276,17 @@ form input[type="text"]::placeholder {
 }
 
 /*--------------------  TITLE & MAIN PART ENDS ----------------------------------------*/
+
+.down-arrow {
+  width: 5px; 
+  height: 5px; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000a2a; 
+  margin: 100px auto;
+
+}
+
 /*--------------------  HELP STARTS ----------------------------------------*/
 
 .help-button {
@@ -301,7 +312,7 @@ form input[type="text"]::placeholder {
 .items {
   color: #f8e089;
   max-width: 1200px;
-  margin: 200px auto;
+  margin: 100px auto;
   text-align: center;
 }
 
