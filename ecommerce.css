@@ -154,6 +154,19 @@ nav a:hover {
   color: #fff;
 }
 
+.hamburger {
+  display: none; /* Hide the hamburger menu by default */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 3px 0;
+}
+
 /*--------------------  NAV ENDS ----------------------------------------*/
 /*--------------------  DISCOUNT STARTS ----------------------------------------*/
 
@@ -304,6 +317,10 @@ form input[type="text"]::placeholder {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.help-button a:hover {
+  color: #f8e089;
 }
 
 /*--------------------  HELP ENDS ----------------------------------------*/
@@ -747,134 +764,74 @@ a:hover {
 
 /*--------------------  FOOTER ENDS ----------------------------------------*/
 
-@media only screen and (max-width: 600px) {
-  body {
-    height: 80vh;
-    overflow-x: hidden;
-  }
-
-  .logo-container {
-    width: 40px;
-    height: 40px;
-  }
-
-  .logo-container img {
-    width: 35px;
-    height: auto;
-    margin-left: -5px;
-    margin-top: 12px;
-  }
-
-  nav {
-    height: 50px;
-  }
-
-  nav ul {
-    margin-left: 25px;
-  }
-
-  nav li {
-    margin: 4px;
-  }
-
-  nav a {
-    font-size: 8px;
-  }
-
-  .blog {
-    display: none;
-  }
-
-  video {
-    margin-top: 100px;
-  }
-
-  .bg {
-    width: 30%;
-  }
-
-  @keyframes move {
-    0% {
-      left: -40%;
-    }
-
-    100% {
-      left: calc(100vw - 120px);
-    }
-  }
-
-  .main h1 {
-    font-size: 35px;
-    margin-top: 60px;
-  }
-
-  .main p {
-    font-size: 15px;
-    margin: 0 0 0 15%;
-  }
-
-  form {
-    margin-top: 50px;
-  }
-
-  input[type="text"] {
-    padding: 15px;
-    font-size: 9px;
-    width: 100px;
-  }
-
-  button[type="submit"] {
-    padding: 13px 20px;
-    font-size: 12px;
-  }
-
-  form input[type="text"]::placeholder {
-    color: #ff6a3d;
-  }
-
-  .help-button {
-    bottom: 10%;
-    left: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  .help-button a {
-    font-size: 12px;
-  }
-
-  .popup {
-    bottom: 10%;
-    right: 10px;
-    width: 100px;
-    height: max-content;
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  .popup .message p {
-    font-size: 10px;
-  }
-
-  .popup .message .code {
-    font-size: 12px;
-  }
-
-  .popup .details {
-    padding: 3px;
-    margin: 1px 0;
-    border-radius: 2px;
-  }
-
-  .popup .details a {
-    font-size: 10px;
-  }
-
-  footer {
-    font-size: 7px;
-  }
-
-  footer a {
-    font-size: 6.5px;
-  }
+/* ----------------------------------------Adjustments for smaller screens---------------------------------------- */
+@media only screen and (max-width: 768px) {
+.nav-menu {
+  position: fixed;
+  right: -100%;
+  top: 4rem;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  border-radius: 5px;
+  text-align: right;
+  transition: 0.5s;
 }
+
+.nav-item .login {
+  border-radius: 2px;
+  border: 2px solid red;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.nav-item .register {
+  border-radius: 2px;
+  background-color: red;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.nav-menu.active {
+  right: 10%;
+  z-index: 5;
+}
+
+.nav-item {
+  padding: 3.5px;
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  right: -40%;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+  background-color: orange;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: orange;
+}}
