@@ -690,9 +690,6 @@ input:focus {
 }
 
 
-
-
-
 /*--------------------  TOOLS ENDS ----------------------------------------*/
 
 /*--------------------  FOOTER STARTS ----------------------------------------*/
@@ -762,6 +759,10 @@ a:hover {
 
 /* ----------------------------------------Adjustments for smaller screens---------------------------------------- */
 @media only screen and (max-width: 768px) {
+
+  html {
+    overflow-x: hidden;
+  }
 
   /* Hamburger & Navigations & Social */
   #hamburger-menu {
@@ -858,14 +859,139 @@ a:hover {
     font-size: 8vw;
   }
 
-  .main>p{
+  .main>p {
     font-size: 4vw;
   }
 
   form {
     margin-top: 50px;
   }
-  
-  
+
+  .tool-box,
+  .helmet-box,
+  .jersey-box,
+  .light-box,
+  .apparel-box,
+  .new-products-box {
+    width: 19vw;
+    height: 60vw;
+  }
+
+  .tool-image,
+  .helmet-image,
+  .jersey-image,
+  .light-image,
+  .apparel-image,
+  .new-products-image {
+    height: 55vw;
+    width: 18vw;
+  }
+
+  .tool-details,
+  .helmet-details,
+  .jersey-details,
+  .light-details,
+  .apparel-details,
+  .new-products-details {
+    height: 25vw;
+    width: fit-content
+  }
+
+  .tool-name,
+  .helmet-name,
+  .jersey-name,
+  .light-name,
+  .apparel-name,
+  .new-products-name {
+    font-size: 4vw;
+  }
+
+  .tool-rating,
+  .helmet-rating,
+  .jersey-rating,
+  .light-rating,
+  .apparel-rating,
+  .new-products-rating {
+    font-size: 3vw;
+  }
+
+  .advantages h2 {
+    font-size: 8vw;
+  }
+
+  .advantages img {
+    height: 50vw;
+    width: 100%;
+  }
+
+  .offers {
+    width: 100%;
+  }
+
+  .offers h2 {
+    font-size: 8vw;
+  }
+
+  .offers p {
+    font-size: 4vw;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="email"] {
+    font-size: 4vw;
+  }
+
+  .subscribe-btn {
+    font-size: 4vw;
+  }
+
+  .customer-reviews {
+    width: 100%;
+  }
+
+  .customer-reviews h2 {
+    font-size: 8vw;
+  }
+
+  .customer-reviews p {
+    font-size: 3vw;
+  }
+
+  .review-wrapper {
+    width: 95%;
+  }
+
+  .review {
+    padding: 6vw;
+  }
+
+  .rating i {
+    font-size: 4vw;
+  }
+
+  .review-title {
+    font-size: 4vw;
+  }
+
+  /*--------------------  FOOTER STARTS ----------------------------------------*/
+
+  footer {
+    font-size: 4vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  .col-md-3,
+  .col-sm-6 {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 10px;
+  }
 
 }
