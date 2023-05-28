@@ -787,7 +787,7 @@ a:hover {
     left: -250px;
     width: 80vw;
     height: 1000px;
-    background-color: #181e32;
+    background-color: #333a4d;
     opacity: 0.8;
     padding: 0px 10px;
     box-sizing: border-box;
@@ -819,6 +819,29 @@ a:hover {
 
   .social {
     width: 100%;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -500px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .profile {
+    justify-content: center;
+  }
+
+  .icon{
+    margin: 15px 20px !important;
   }
 
   .logo-container-social {
