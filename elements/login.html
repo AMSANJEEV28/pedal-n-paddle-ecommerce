@@ -13,12 +13,21 @@
   <body>
     <section class="head">
       <div class="social">
-        <ul>
+        <div class="logo-container-social">
+          <a href="index.html" target="_self"
+            ><img src="../assets/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul class="social-links">
           <li>
-            <a href="https://amsanjeev.me"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://amsanjeev.me"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
           <li>
-            <a href="https://amsanjeev.me"><i class="fab fa-instagram"></i></a>
+            <a href="https://amsanjeev.me"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
           <li>
             <a href="https://amsanjeev.me"><i class="fab fa-twitter"></i></a>
@@ -26,41 +35,60 @@
         </ul>
       </div>
 
-      <nav>
-        <div class="logo-container">
-          <a href="../index.html" target="_self"><img src="../assets/logo.png" alt="Logo" /></a>
-        </div>
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav class="navbar" id="sidebar-menu">
+          <div class="logo-container">
+            <a href="index.html" target="_self"
+              ><img src="assets/logo.png" alt="Logo"
+            /></a>
+          </div>
 
-        <div class="navigations">
-          <ul>
-            <li><a href="bikesNframes.html">Bikes & Frames</a></li>
-            <li><a href="clothing.html">Clothing</a></li>
-            <li><a href="helmetsNshoes.html">Helmets & Shoes</a></li>
-            <li><a href="accessories.html">Accessories</a></li>
-            <li class="blog"><a href="blog.html">Blog</a></li>
-            <li><a href="sale.html">Sale</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </div>
+          <div class="navigations nav-link">
+            <ul class="nav-items nav-menu">
+              <li class="nav-items">
+                <a href="elements/bikesNframes.html">Bikes & Frames</a>
+              </li>
+              <li class="nav-items">
+                <a href="elements/clothing.html">Clothing</a>
+              </li>
+              <li class="nav-items">
+                <a href="elements/helmetsNshoes.html">Helmets & Shoes</a>
+              </li>
+              <li class="nav-items">
+                <a href="elements/accessories.html">Accessories</a>
+              </li>
+              <li class="blog"><a href="elements/blog.html">Blog</a></li>
+              <li class="nav-items"><a href="elements/sale.html">Sale</a></li>
+              <li class="nav-items">
+                <a href="elements/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="profile">
-          <ul>
-            <li>
-              <a href="elements/a.html"><i class="fas fa-user"></i></a>
-            </li>
-            <li>
-              <a href="elements/cart.html"><i class="fas fa-shopping-cart"></i></a>
-            </li>
-            <li>
-              <a href="elements/search.html"><i class="fas fa-search"></i></a>
-            </li>
-            <li>
-              <a href="elements/heart.html"><i class="fas fa-heart"></i></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+          <div class="profile nav-links">
+            <ul class="nav-items nav-menu">
+              <li class="nav-items icon">
+                <a href="elements/a.html"><i class="fas fa-user"></i></a>
+              </li>
+              <li class="nav-items icon">
+                <a href="elements/cart.html"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+              <li class="nav-items icon">
+                <a href="elements/search.html"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+              <li class="nav-items icon">
+                <a href="elements/heart.html"><i class="fas fa-heart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </label>
+      
       <div class="discount">
         <p>
           Interest free EMI available. 72 Hours left!! 20% off on 1 item. Use
@@ -68,13 +96,66 @@
         </p>
       </div>
     </section>
+
     <section class="footer">
       <footer>
-        <p>
-          &copy; 2023 Pedal and Paddle. All rights reserved. Designed and
-          developed by
-          <a href="https://github.com/AMSANJEEV28">[A M Sanjeev]</a>.
-        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Why Choose Us</a></li>
+                <li><a href="#">Meet the Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Customer Service</h4>
+              <ul>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Return & Exchange Policy</a></li>
+                <li><a href="#">Price Match</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">Pedal and Paddle Gift Card</a></li>
+                <li><a href="#">EMI Option</a></li>
+                <li><a href="#">Earn By Selling</a></li>
+                <li><a href="#">Returns & Exchange Portal</a></li>
+                <li><a href="#">Chat to Track orders or Report Issues</a></li>
+                <li><a href="#">Support Mail - support@pedalnpaddle.in</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4>Contact Us</h4>
+              <p>Pedal and Paddle Pvt. ltd.<br />Siwan, Bihar --- 841226</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  &copy; 2023 Pedal and Paddle. All rights reserved. Designed
+                  and developed by
+                  <a href="https://github.com/AMSANJEEV28">[A M Sanjeev]</a>.
+                </p>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <p>
+                  Pedal and Paddle Support: Returns & Exchange Portal 10AM - 6PM
+                  (Mon-Fri) | Chat to Track orders or Report Issues
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </section>
   </body>

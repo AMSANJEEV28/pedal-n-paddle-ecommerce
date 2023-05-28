@@ -1,74 +1,360 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inspiration&family=Righteous&family=Montserrat&display=swap");
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    background-color: #181e32;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    margin: 0px;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100%;
-  }
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #181e32;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 100px;
+}
 
 /*--------------------  HEAD STARTS ----------------------------------------*/
 
 .head {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+/*--------------------  SOCIAL STARTS ----------------------------------------*/
+
+.social {
+  width: 100%;
+  height: 50px;
+  background-color: #ff6a3d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #ff9a7b;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.social li {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.social a:hover {
+  background: none;
+  color: #fff;
+}
+
+.logo-container-social {
+  visibility: hidden;
+}
+
+/*--------------------  SOCIAL ENDS ----------------------------------------*/
+/*--------------------  NAV STARTS ----------------------------------------*/
+
+#hamburger-input {
+  display: none;
+}
+
+.logo-container {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  left: 0;
+}
+
+.logo-container img {
+  height: 50px;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #ff6a3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 9999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "Righteous", cursive;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background: none;
+  color: #fff;
+}
+
+.profile {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  padding: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.profile li {
+  margin: 0 10px;
+}
+
+.profile a:hover {
+  background: none;
+  color: #fff;
+}
+
+/*--------------------  NAV ENDS ----------------------------------------*/
+/*--------------------  DISCOUNT STARTS ----------------------------------------*/
+
+.discount {
+  width: 100%;
+  height: 35px;
+  background-color: #fdd5b1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  color: #ff6a3d;
+  font-weight: bold;
+}
+
+.discount p {
+  animation: float 20s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(100%);
   }
-  
-  /*--------------------  SOCIAL STARTS ----------------------------------------*/
-  
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*----- DISCOUNT ENDS -----*/
+/*--------------------  HEAD ENDS ----------------------------------------*/
+/*--------------------  FOOTER STARTS ----------------------------------------*/
+
+
+footer {
+  background-color: #fdd5b1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-3,
+.col-sm-6 {
+  width: calc(100% / 4);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.col-md-3:last-child,
+.col-sm-6:last-child {
+  padding-right: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #000a2a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6a3d;
+}
+
+
+/*--------------------  FOOTER ENDS ----------------------------------------*/
+
+/* ----------------------------------------Adjustments for smaller screens---------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Hamburger & Navigations & Social */
+  #hamburger-menu {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: none;
+    padding: 0px;
+    margin: 20px;
+    background: linear-gradient(to bottom,
+        white 20%, white 0%,
+        #181e32, #181e32 40%,
+        white 20%, white 60%,
+        #181e32 40%, #181e32 80%,
+        white 60%, white 110%);
+  }
+
+  #hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 80vw;
+    height: 1000px;
+    background-color: #333a4d;
+    opacity: 0.8;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    z-index: 9000;
+  }
+
+  #hamburger-input {
+    visibility: hidden;
+  }
+
+  #hamburger-input:checked+#hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  #hamburger-input:checked~.overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .head {
+    width: 100%
+  }
+
   .social {
     width: 100%;
-    height: 35px;
-    background-color: #ff6a3d;
-    display: flex;
-    justify-content: flex-end;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    overflow: hidden;
-    border-bottom: 1px solid #ff9a7b;
+    margin-top: -500px;
   }
-  
-  .social ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
+
+  nav li {
+    margin: 10px 0;
   }
-  
-  .social li {
-    margin: 10px;
-    display: flex;
-    align-items: center;
+
+  .profile {
+    justify-content: center;
   }
-  
-  .social a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: normal;
+
+  .icon{
+    margin: 15px 20px !important;
   }
-  
-  .social a:hover {
-    background:none;
-    color: #fff;
-  }
-  
-  /*--------------------  SOCIAL ENDS ----------------------------------------*/
-  /*--------------------  NAV STARTS ----------------------------------------*/
-  
-  .logo-container {
+
+  .logo-container-social {
+    visibility: visible;
     position: absolute;
     width: 35px;
     height: 35px;
@@ -78,184 +364,166 @@
     padding: 10px;
     left: 0;
   }
-  
-  .logo-container img {
+
+  .logo-container-social img {
     height: 50px;
     margin: 0;
   }
-  
-  nav {
+
+  .head>.social>ul>li {
+    position: relative;
+  }
+
+  .discount {
+    width: fit-content;
+  }
+
+  video {
+    margin-top: -20px;
+  }
+
+  .bg {
+    width: 30%;
+  }
+
+  .main>h1 {
+    margin-top: 80px;
+    font-size: 8vw;
+  }
+
+  .main>p {
+    font-size: 4vw;
+  }
+
+  form {
+    margin-top: 50px;
+  }
+
+  .tool-box,
+  .helmet-box,
+  .jersey-box,
+  .light-box,
+  .apparel-box,
+  .new-products-box {
+    width: 19vw;
+    height: 60vw;
+  }
+
+  .tool-image,
+  .helmet-image,
+  .jersey-image,
+  .light-image,
+  .apparel-image,
+  .new-products-image {
+    height: 55vw;
+    width: 18vw;
+  }
+
+  .tool-details,
+  .helmet-details,
+  .jersey-details,
+  .light-details,
+  .apparel-details,
+  .new-products-details {
+    height: 25vw;
+    width: fit-content
+  }
+
+  .tool-name,
+  .helmet-name,
+  .jersey-name,
+  .light-name,
+  .apparel-name,
+  .new-products-name {
+    font-size: 4vw;
+  }
+
+  .tool-rating,
+  .helmet-rating,
+  .jersey-rating,
+  .light-rating,
+  .apparel-rating,
+  .new-products-rating {
+    font-size: 3vw;
+  }
+
+  .advantages h2 {
+    font-size: 8vw;
+  }
+
+  .advantages img {
+    height: 50vw;
     width: 100%;
-    background-color: #ff6a3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    overflow: hidden;
   }
-  
-  .navigations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .offers {
     width: 100%;
-    max-width: 1200px;
-    z-index: 9999;
   }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
+
+  .offers h2 {
+    font-size: 8vw;
   }
-  
-  nav li {
-    margin: 10px 20px;
+
+  .offers p {
+    font-size: 4vw;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-family: "Righteous", cursive;
+
+  form {
+    width: 100%;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
-    background:none;
-    color: #fff;
+
+  input[type="email"] {
+    font-size: 4vw;
   }
-  
-  .profile {
-    position: absolute;
-    width: max-content;
-    height: max-content;
-    padding: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    max-width: 1200px;
+
+  .subscribe-btn {
+    font-size: 4vw;
   }
-  
-  .profile li {
+
+  .customer-reviews {
+    width: 100%;
+  }
+
+  .customer-reviews h2 {
+    font-size: 8vw;
+  }
+
+  .customer-reviews p {
+    font-size: 3vw;
+  }
+
+  .review-wrapper {
+    width: 95%;
+  }
+
+  .review {
+    padding: 6vw;
+  }
+
+  .rating i {
+    font-size: 4vw;
+  }
+
+  .review-title {
+    font-size: 4vw;
+  }
+
+  /*--------------------  FOOTER STARTS ----------------------------------------*/
+
+  footer {
+    font-size: 4vw;
+  }
+
+  h4 {
+    font-size: 4vw;
+  }
+
+  .col-md-3,
+  .col-sm-6 {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
     margin: 0 10px;
   }
-  .profile a:hover{
-    background:none;
-    color: #fff;
-  }
-  
-  /*--------------------  NAV ENDS ----------------------------------------*/
-  /*--------------------  DISCOUNT STARTS ----------------------------------------*/
-  
-  .discount {
-    width: 100%;
-    height: 35px;
-    background-color: #fdd5b1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    overflow: hidden;
-    color: #ff6a3d;
-    font-weight: bold;
-  }
-  
-  .discount p {
-    animation: float 20s linear infinite;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translateX(100%);
-    }
-  
-    50% {
-      transform: translateX(-100%);
-    }
-  
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
-  /*----- DISCOUNT ENDS -----*/
-  /*--------------------  HEAD ENDS ----------------------------------------*/
-  
-
-/* Footer */
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    font-size: 10px;
-    padding: 10px;
-    text-align: center;
-    z-index: -1;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: #f8e089;
-}
-
-@media only screen and (max-width: 600px) {
-
-    body {
-        height: 80vh;
-        overflow: hidden;
-    }
-
-    .logo-container {
-        width: 40px;
-        height: 40px;
-    }
-
-    .logo-container img {
-        width: 35px;
-        height: auto;
-        margin-left: -5px;
-    }
-
-    nav {
-        height: 35px;
-    }
-
-    nav ul {
-        margin-left: 15px;
-    }
-
-    nav li {
-        margin: 4px;
-    }
-
-    nav a {
-        font-size: 8.5px;
-    }
-
-    footer {
-        font-size: 9px;
-    }
-
-    footer a {
-        font-size: 9px;
-    }
 
 }
